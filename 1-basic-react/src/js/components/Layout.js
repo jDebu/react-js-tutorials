@@ -8,13 +8,16 @@ export default class Layout extends React.Component {
     super();
     this.state = {
       title: "Welcome",
+      other: "Hi",
     };
   }
-
+  //changeTitle(title,other) {
   changeTitle(title) {
-    this.setState({title});
+    console.log(this.state.title);
+    this.setState({title});//transform el string a object segun la llave del nombre variable
+    //this.setState({title,other});
+    //console.log(this.state.other);
   }
-
   render() {
     return (
       <div>

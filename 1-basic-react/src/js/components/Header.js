@@ -5,10 +5,13 @@ import Title from "./Header/Title";
 export default class Header extends React.Component {
   handleChange(e) {
     const title = e.target.value;
-    this.props.changeTitle(title);
+    console.log(title);
+    this.props.changeTitle(title);//response
+    //this.props.changeTitle(title,title);
   }
 
   render() {
+    console.log(this.props);
     return (
       <div>
         <Title title={this.props.title} />
